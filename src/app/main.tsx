@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import {MyContext} from '@/app/Context';
 import RenderPermitidos from '@/renders/renderPermitidos'
 
-interface HomeProps {
+interface MainProps {
   // Define los tipos de las props de Home
   lsItems: Item[];
   itemsPendientes: Item[];
@@ -15,7 +15,7 @@ interface Item {
   texto: string;
   finalizada: boolean;
 }
-const Home: React.FC<HomeProps> = () => {
+const Main: React.FC<MainProps> = () => {
   
   const {lsItems} = useContext(MyContext)
 
@@ -46,4 +46,4 @@ const Home: React.FC<HomeProps> = () => {
   );
 }
 
-export default Home; 
+export default Main; 
