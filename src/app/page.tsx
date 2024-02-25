@@ -1,10 +1,8 @@
-'use client'
 import React from 'react';
 import MyContextProvider from '@/app/Context';
 import Main from './main';
 
-export default function () {
-  
+function Page() {
   return (
     <MyContextProvider>
       <Main />
@@ -12,3 +10,6 @@ export default function () {
   );
 }
 
+Page.displayName = 'Page';
+
+export default Page;
