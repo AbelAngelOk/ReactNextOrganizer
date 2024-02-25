@@ -34,14 +34,14 @@ const Permitido: React.FC<PermitidoProps> = ({ id, finalizada, children }) => {
   };
 
   return (
-    <label className="flex w-full h-10 my-5 gap-5 px-5 border-b-2 border-gray-400 text-center">
+    <label className="flex w-full h-10 sm:h-auto my-5 gap-5 px-5 border-b-2 border-gray-400 text-center">
       <input
         type="checkbox"
         className="w-8 h-5"
         checked={isChecked}
         onChange={handleCheckboxChange}
       />
-      <span className="h-8 text-center">{children}</span>
+      <span className="h-8 sm:h-auto sm:text-xs md:text-sm lg:text-lg text-sm">{children}</span>
     </label>
   );
 };
