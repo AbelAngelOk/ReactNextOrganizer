@@ -15,7 +15,10 @@ interface MyContextType {
 }
 
 // Crear un contexto con el tipo de valor definido
-const MyContext = createContext<MyContextType | undefined>(undefined);
+const MyContext = createContext<MyContextType>({
+    lsItems: [],
+    setLsItems: () => {} // Aquí puedes proporcionar una función vacía o una función que no haga nada
+  });
 
 // Componente proveedor que proporciona valores para el contexto
 const MyContextProvider: React.FC<MyContextProviderProps> = ({ children }) => {
