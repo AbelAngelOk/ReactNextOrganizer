@@ -5,9 +5,6 @@ import RenderPermitidos from '@/renders/renderPermitidos'
 
 interface MainProps {
   // Define los tipos de las props de Home
-  lsItems: Item[];
-  itemsPendientes: Item[];
-  itemsRealizados: Item[];
 }
 
 interface Item {
